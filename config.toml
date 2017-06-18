@@ -8,7 +8,7 @@ canonifyUrls = true
 
 [params]
   description = "Some thoughts and ramblings of Ben Booth. I'm a software developer specialising in JavaScript as well as a husband & father, football (soccer) addict and a Christian."
-  # metaDescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  #metaDescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   logo = "images/logo_bk-1-1.png"
   cover = "images/DSC_0106_2_JPG-3.jpg"
   author = "Ben Booth"
@@ -18,14 +18,27 @@ canonifyUrls = true
   authorThumbnail = "images/BenBooth_20170609.jpg"
   googleAnalyticsUserID = "UA-46740857-2"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
-  # rssLink = "http://feeds.feedburner.com/..."
+  #rssLink = "http://feeds.feedburner.com/..."
   githubName = "bkbooth"
   twitterName = "bkbooth11"
-  # facebookName = ""
-  # linkedinName = ""
+  #facebookName = ""
+  #linkedinName = ""
   hideHugoSupport = true
 
   # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
   # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
   hjsStyle = "atom-one-light"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 120
+[[menu.main]]
+  name = "Twitter"
+  url = "https://twitter.com/bkbooth"
+  weight = 110
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/bkbooth"
+  weight = 100
