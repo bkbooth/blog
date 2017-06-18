@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Source for my blog, built with Hugo, currently hosted at bkbooth.me",
+  "author": "Ben Booth <bkbooth@gmail.com>",
+  "repository": "git@github.com:bkbooth/blog.git",
+  "keywords": ["bkbooth", "blog", "Hugo"],
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "prebuild": "node ./utils/check-hugo",
+    "deploy": "gh-pages -d public",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  },
+  "enagines": {
+    "node": ">=6",
+    "npm": ">=5"
+  }
+}

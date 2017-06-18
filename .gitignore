@@ -1,2 +1,5 @@
 /public/
 /themes/
+
+/node_modules/
+npm-debug.log
