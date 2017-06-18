@@ -9,7 +9,7 @@ canonifyUrls = true
 [params]
   description = "Some thoughts and ramblings of Ben Booth. I'm a software developer specialising in JavaScript as well as a husband & father, football (soccer) addict and a Christian."
   #metaDescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
-  logo = "images/logo_bk-1-1.png"
+  logo = "images/logo.png"
   cover = "images/DSC_0106_2_JPG-3.jpg"
   author = "Ben Booth"
   bio= "Software developer specialising in JavaScript, husband & father, football (soccer) addict and Christian."
