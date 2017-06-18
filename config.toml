@@ -1,6 +1,7 @@
 baseURL = "https://bkbooth.me/"
 languageCode = "en-AU"
 title = "Ben Booth"
+theme = "casper"
 paginate = 5
 copyright = "© 2017"
 canonifyUrls = true
