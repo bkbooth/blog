@@ -1,8 +1,7 @@
 +++
 title = "Running ghost with PM2 under a different user account on a Linux server"
 date = "2015-06-15T13:17:00+10:00"
-tags = ["Ghost", "Node.js", "Linux"]
-draft = false
+tags = ["ghost", "node.js", "linux"]
 aliases = ["/running-ghost-under-a-different-user-account-on-a-linux-server"]
 +++
 

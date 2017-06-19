@@ -1,8 +1,7 @@
 +++
 title = "Managing Keybase private key with GPGTools"
 date = "2017-02-09T00:07:00+10:00"
-tags = ["Keybase", "GPG"]
-draft = false
+tags = ["keybase", "gpg", "pgp"]
 aliases = ["/managing-keybase-private-key-with-gpgtools"]
 +++
 

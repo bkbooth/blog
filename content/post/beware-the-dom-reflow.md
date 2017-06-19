@@ -1,8 +1,7 @@
 +++
 title = "Beware the DOM Reflow"
 date = "2014-03-14T17:17:00+10:00"
-tags = ["Programming", "CSS"]
-draft = false
+tags = ["programming", "css"]
 aliases = ["/beware-the-dom-reflow"]
 +++
 

@@ -1,8 +1,7 @@
 +++
 title = "Pregnancy Risk Factors"
 date = "2014-03-12T08:56:00+10:00"
-tags = ["General"]
-draft = false
+tags = ["general", "musings"]
 aliases = ["/pregnancy-risk-factors"]
 +++
 

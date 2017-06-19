@@ -1,8 +1,7 @@
 +++
 title = "Writing a JavaScript Promises Library"
 date = "2015-05-04T22:16:00+10:00"
-tags = ["Programming", "JavaScript", "Promises"]
-draft = false
+tags = ["programming", "javascript", "promises"]
 aliases = ["/writing-a-javascript-promises-library"]
 +++
 
