@@ -7,7 +7,7 @@ aliases = ["/building-a-basic-ui-clone-of-instagram-using-elm-part-3"]
 hjsExtraLanguages = ["elm"]
 +++
 
-This article is a part of a series, if you haven't read the first or second parts yet you can read them [here](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) and [here](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-2/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part2) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
+This article is a part of a series, if you haven't read the first or second parts yet you can read them [here](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) and [here](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-2/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part2) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
 
 
 ## Implement the single post view
@@ -507,8 +507,8 @@ This doesn't solve all of the problems that you'll face trying to build a front-
 
 If you missed one of the earlier parts, feel free to go back and read them too:
 
-  * [Part 1](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
-  * [Part 2](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
+  * [Part 1](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
+  * [Part 2](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
 
 
   [elm]: http://elm-lang.org/ "Elm"

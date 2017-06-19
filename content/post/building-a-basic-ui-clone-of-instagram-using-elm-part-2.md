@@ -7,7 +7,7 @@ aliases = ["/building-a-basic-ui-clone-of-instagram-using-elm-part-2"]
 hjsExtraLanguages = ["elm"]
 +++
 
-This article is a part of a series, if you haven't read the first part yet you can read it [here](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-1/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part1) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
+This article is a part of a series, if you haven't read the first part yet you can read it [here](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part1) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
 
 
 ## Implement the main list of posts view
@@ -346,8 +346,8 @@ Finally we need to update the links in _View.elm_ to use `State.toUrl`. Import `
 
 You can view the code that we've built so far [here](https://github.com/bkbooth/Elmstagram/tree/part2). We'll continue building the app in Part 3:
 
-  * [Part 1](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
-  * [Part 3](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
+  * [Part 1](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
+  * [Part 3](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
 
 
   [elm]: http://elm-lang.org/ "Elm"

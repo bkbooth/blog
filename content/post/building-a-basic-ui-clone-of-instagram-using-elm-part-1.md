@@ -278,8 +278,8 @@ $ http-server
 
 You can view the code that we've built so far [here](https://github.com/bkbooth/Elmstagram/tree/part1). We'll continue building the app in the following articles:
 
-  * [Part 2](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
-  * [Part 3](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
+  * [Part 2](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
+  * [Part 3](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
 
 
   [elm]: http://elm-lang.org/ "Elm"

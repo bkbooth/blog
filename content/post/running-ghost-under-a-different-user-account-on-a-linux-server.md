@@ -11,7 +11,7 @@ When I first setup my [ghost] blog on my own server (a self-managed [Linode] whi
 My [Linode] is running [CentOS] 7, but the process should be pretty similar across Linux distributions, this is an overview of how I'm setup to run [ghost]:
 
 * [Node.js] and [npm] are installed and managed by [nvm]
-* The [ghost] application is setup under `/var/www/bkbooth.me`
+* The [ghost] application is setup under `/var/www/benkbooth.com`
 * [nginx] is being used as a reverse proxy to forward requests to the [ghost] application
 * The [ghost] application is always running and starts on server start using [PM2]
 * [Keymetrics] monitoring through [PM2]
@@ -82,18 +82,18 @@ This is assuming you were already running the blog using [PM2] with the name `gh
 
 ## Run the [ghost] application under the new user account
 
-Next you'll need to get [ghost] running under the new user account. Firstly, change the ownership of all files (my [ghost] instance is installed to `/var/www/bkbooth.me`):
+Next you'll need to get [ghost] running under the new user account. Firstly, change the ownership of all files (my [ghost] instance is installed to `/var/www/benkbooth.com`):
 
 ```none
 [user]$ cd /var/www/
-[user]$ sudo chown -R ghost:ghost bkbooth.me/
+[user]$ sudo chown -R ghost:ghost benkbooth.com/
 ```
 
 I don't think it would be necessary, but just to be sure, I cleared out the `node_modules` and re-installed the dependencies under the new user account (remember to change to the new user account):
 
 ```none
 [user]$ sudo su ghost
-[ghost]$ cd bkbooth.me/
+[ghost]$ cd benkbooth.com/
 [ghost]$ rm -rf node_modules/*
 [ghost]$ npm install --production
 ```
