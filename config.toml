@@ -25,6 +25,7 @@ canonifyUrls = true
   #linkedinName = ""
   hideHugoSupport = true
   customCSS = ["css/styles.css"]
+  enableRobotsTXT = true
 
   # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
