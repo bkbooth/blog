@@ -63,3 +63,9 @@ pre code, pre tt {
     display: inline-block;
   }
 }
+
+/* Fix the nav menu */
+.nav {
+  font-family: inherit;
+  font-weight: inherit;
+}
