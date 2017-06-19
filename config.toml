@@ -7,14 +7,14 @@ copyright = "© 2017"
 canonifyUrls = true
 
 [params]
-  description = "Some thoughts and ramblings of Ben Booth. I'm a software developer specialising in JavaScript as well as a husband & father, football (soccer) addict and a Christian."
+  description = "Hi 👋 I'm Ben and I make things for the web. Sometimes I write things here and sometimes I talk about things. I'm also a husband & father, football (soccer) addict and a Christian."
   #metaDescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   logo = "images/logo.png"
   cover = "images/DSC_0106_2_JPG-3.jpg"
   author = "Ben Booth"
   bio= "Software developer specialising in JavaScript, husband & father, football (soccer) addict and Christian."
   authorLocation = "Wollongong, Australia"
-  authorWebsite = "https://about.me/bkbooth"
+  authorWebsite = "https://benkbooth.com"
   authorThumbnail = "images/BenBooth_20170609.jpg"
   googleAnalyticsUserID = "UA-46740857-2"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
