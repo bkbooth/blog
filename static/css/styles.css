@@ -42,3 +42,24 @@ pre code, pre tt {
     width: auto;
   }
 }
+
+/* Fix the post meta */
+.post-header .post-meta {
+  margin-top: -1rem;
+}
+.post-header .post-meta .post-date {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.post-content {
+  margin-top: 1.75rem;
+}
+@media only screen and (max-width: 500px) {
+  .post-header .post-meta {
+    margin-top: 0;
+  }
+  .post-date {
+    display: inline-block;
+  }
+}
