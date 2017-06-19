@@ -1,0 +1,23 @@
+/* Add text-shadow to text sitting on top of the cover image */
+.page-title,
+.main-header a.bloglogo .icon-linkedin,
+.main-header a.bloglogo .icon-github,
+.main-header a.bloglogo .icon-twitter,
+.main-header a.bloglogo .icon-facebook,
+.main-header a.bloglogo .icon-instagram,
+.main-header a.bloglogo .icon-pinterest,
+.main-header a.bloglogo .icon-google-plus {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.page-description {
+  text-shadow:
+    -1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000,
+    1px -1px 3px #000;
+}
+
+/* Don't wrap code block lines */
+pre code, pre tt {
+  white-space: pre;
+}
