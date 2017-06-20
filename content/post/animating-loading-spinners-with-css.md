@@ -1,9 +1,8 @@
 +++
 title = "Animating Loading Spinners with CSS"
-date = "2017-06-20T22:15:17+10:00"
+date = "2017-06-21T08:49:09+10:00"
 tags = ["programming", "css"]
 image = "/images/2017/06/highres_461629142.jpg"
-draft = true
 +++
 
 I recently had the privilege of being invited to give my first ever meetup talk at [SydCSS][]. It was a first time speakers night so short talks (5 mins) and high nerves were the order of the day. On a recent side project I had wasted a bunch of time creating a fancy loading spinner while I was mentally blocked trying to solve a real problem. I had the idea at the time that I could probably give a reasonably interesting talk by making some loading animations with CSS and explaining the interesting parts of the [CSS animation][css-animation] API used for each animation. I had a rough plan and a platform, the rest of this article is the transcript of that talk rewritten as a blog post. 
