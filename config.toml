@@ -38,7 +38,7 @@ canonifyUrls = true
   weight = 120
 [[menu.main]]
   name = "Twitter"
-  url = "https://twitter.com/bkbooth"
+  url = "https://twitter.com/bkbooth11"
   weight = 110
 [[menu.main]]
   name = "GitHub"
