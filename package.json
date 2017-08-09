@@ -9,12 +9,7 @@
   "private": true,
   "scripts": {
     "build": "hugo",
-    "prebuild": "node ./utils/check-hugo",
-    "deploy": "gh-pages -d public",
-    "predeploy": "npm run build"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "prebuild": "node ./utils/check-hugo"
   },
   "enagines": {
     "node": ">=6"
