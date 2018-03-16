@@ -6,7 +6,7 @@ aliases = ["/building-a-basic-ui-clone-of-instagram-using-elm-part-3"]
 hjsExtraLanguages = ["elm"]
 +++
 
-This article is a part of a series, if you haven't read the first or second parts yet you can read them [here](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) and [here](https://bkbooth.me/building-a-basic-ui-clone-of-instagram-using-elm-part-2/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part2) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
+This article is a part of a series, if you haven't read the first or second parts yet you can read them [here](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) and [here](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-2/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part2) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
 
 
 ## Implement the single post view
@@ -25,7 +25,7 @@ getPost postId posts =
 ```
 
 We need to return a `Maybe Post` because the `postId` string parsed from the URL might not be a valid `Post.id`, or there might just not be a `Post` in `model.posts` that matches the `postId`. We approach the problem by filtering the list to `Post`s with a `Post.id` matching `postId` which should leave 1 or 0 `Post`s in the `postsById` list (we're trusting the data source here that `Post.id` is unique), then we take the first item from the filtered list, which will return a `Maybe Post`. Now let's update the `SinglePost` case of `View.viewPage` to use `View.getPost` and `View.viewPost` to render a single post.
- 
+
 ```elm
 -- View.elm
 
@@ -34,13 +34,13 @@ viewPage model =
     case model.page of
         ListOfPosts ->
             -- ...
-        
+
         SinglePost postId ->
             case getPost postId model.posts of
                 Just post ->
                     div [ class "photo-single" ]
                         [ viewPost model post ]
-                        
+
                 Nothing ->
                     div []
                         [ text ("Post " ++ postId ++ " not found.") ]
@@ -67,7 +67,7 @@ We've got a bit of work to do in order to load the comments, but thankfully it's
 ```
 
 Basically for each `Post` we have a _{Post.id}.json_ with the list of comments for that post. We only care about the `"username"` and `"text"` properties for now, let's firstly define a `type alias` in _Types.elm_ and a decoder in _Rest.elm_.
- 
+
 ```elm
 -- Types.elm
 
@@ -113,7 +113,7 @@ type alias Model =
     , comments : Dict String (List Comment)
     , page : Page
     }
-    
+
 initialModel : Page -> Model
 initialModel page =
     Model [] Dict.empty page
@@ -135,16 +135,16 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         FetchComments postId (Ok comments) ->
             { model
                 | comments = Dict.insert postId comments model.comments
                 , posts = List.map (setPostComments postId <| List.length comments) model.posts
             } ! []
-        
+
         FetchComments postId (Err _) ->
             update (FetchComments postId <| Ok []) model
-            
+
 setPostComments : String -> Int -> Post -> Post
 setPostComments postId numberOfComments post =
     if post.id == postId then
@@ -167,13 +167,13 @@ init location =
             initialModel ListOfPosts
                 ! [ Rest.getPosts
                   ]
-                  
+
         Just (SinglePost postId) ->
             initialModel (SinglePost postId)
                 ! [ Rest.getPosts
                   , Rest.getPostComments postId
                   ]
-        
+
         Nothing ->
             -- ...
 
@@ -181,18 +181,18 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         NavigatedTo maybePage ->
             case maybePage of ->
                 Just ListOfPosts ->
                     { model | page = ListOfPosts }
                         ! []
-                
+
                 Just (SinglePost postId) ->
                     { model | page = SinglePost postId }
                         ! [ Rest.getPostComments postId
                           ]
-                
+
                 Nothing ->
                     -- ...
 ```
@@ -214,8 +214,8 @@ getPostComments postId comments =
             []
 ```
 
-Next we need to make some changes to the existing `View.viewPost` function. We'll determine if we should show the list of `Comment`s by inspecting `model.page`, we only want to show them for the `SinglePost` case, so we'll just show an empty `div` for the `ListOfPosts` case. We'll add the comments directly after `p.photo-caption`. 
-   
+Next we need to make some changes to the existing `View.viewPost` function. We'll determine if we should show the list of `Comment`s by inspecting `model.page`, we only want to show them for the `SinglePost` case, so we'll just show an empty `div` for the `ListOfPosts` case. We'll add the comments directly after `p.photo-caption`.
+
 ```elm
 -- View.elm
 
@@ -240,7 +240,7 @@ Finally we'll define the `viewComments` and `viewComment` functions. `viewCommen
 
 ```elm
 -- View.elm
-        
+
 viewComments : Model -> Post -> Html Msg
 viewComments model post =
     let
@@ -291,7 +291,7 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         RemoveComment postId index ->
             let
                 removePostComment : Maybe (List Comment) -> Maybe (List Comment)
@@ -345,12 +345,12 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         FetchComments postId (Ok comments) ->
             case Dict.get postId model.comments of
                 Just existingComments ->
                     model ! []
-                    
+
                 Nothing ->
                     { model
                         | comments = Dict.insert postId updatedComments model.comments
@@ -364,7 +364,7 @@ Recompile and test it in the browser. Removed comments now stay removed! ...unti
 ## Implement the add comment form
 
 This last step will require updating text in some input fields. Starting in _Types.elm_, we will add and initialise a `newComment` property to the `Model` record and we'll need 3 new actions in `Msg`, one for each of the two input fields, and one for actually adding the comment.
- 
+
 ```elm
 --Types.elm
 
@@ -374,11 +374,11 @@ type alias Model =
     , page : Page
     , newComment : Comment
     }
-    
+
 initialModel : Page -> Model
 initialModel page =
     Model [] Dict.empty page (Comment "" "")
-    
+
 type Msg
     = -- ...
     | UpdateCommentUsername String
@@ -395,7 +395,7 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         UpdateCommentUsername username ->
             let
                 comment = model.newComment
@@ -403,7 +403,7 @@ update msg model =
                 { model
                     | newComment = { comment | username = username }
                 } ! []
-                
+
         UpdateCommentText text ->
             let
                 comment = model.newComment
@@ -422,7 +422,7 @@ update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
     case msg of
         -- ...
-        
+
         AddComment postId comment ->
             let
                 addPostComment : Maybe (List Comment) -> Maybe (List Comment)
@@ -458,7 +458,7 @@ viewComments model post =
             [ class "comments" ] <|
             listOfComments
                 ++ [ viewCommentForm model post ]
-                
+
 viewCommentForm : Model -> Post -> (String, Html Msg)
 viewCommentForm model post =
     ( "comment-form"
@@ -506,12 +506,12 @@ This doesn't solve all of the problems that you'll face trying to build a front-
 
 If you missed one of the earlier parts, feel free to go back and read them too:
 
-  * [Part 1](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
-  * [Part 2](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
+  * [Part 1](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
+  * [Part 2](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-2/) - Build the main list view and add navigation
 
 
   [elm]: http://elm-lang.org/ "Elm"
-  [demo]: https://elmstagram.bkbooth.me "Elmstagram | Demo"
+  [demo]: https://elmstagram.benbooth.co "Elmstagram | Demo"
   [repo]: https://github.com/bkbooth/Elmstagram "Elmstagram | GitHub"
   [json]: https://en.wikipedia.org/wiki/JSON "JSON"
   [dom]: https://en.wikipedia.org/wiki/Document_Object_Model "DOM"

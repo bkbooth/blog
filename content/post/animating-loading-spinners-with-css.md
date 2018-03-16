@@ -5,7 +5,7 @@ tags = ["programming", "css"]
 image = "/images/2017/06/highres_461629142.jpg"
 +++
 
-I recently had the privilege of being invited to give my first ever meetup talk at [SydCSS][]. It was a first time speakers night so short talks (5 mins) and high nerves were the order of the day. On a recent side project I had wasted a bunch of time creating a fancy loading spinner while I was mentally blocked trying to solve a real problem. I had the idea at the time that I could probably give a reasonably interesting talk by making some loading animations with CSS and explaining the interesting parts of the [CSS animation][css-animation] API used for each animation. I had a rough plan and a platform, the rest of this article is the transcript of that talk rewritten as a blog post. 
+I recently had the privilege of being invited to give my first ever meetup talk at [SydCSS][]. It was a first time speakers night so short talks (5 mins) and high nerves were the order of the day. On a recent side project I had wasted a bunch of time creating a fancy loading spinner while I was mentally blocked trying to solve a real problem. I had the idea at the time that I could probably give a reasonably interesting talk by making some loading animations with CSS and explaining the interesting parts of the [CSS animation][css-animation] API used for each animation. I had a rough plan and a platform, the rest of this article is the transcript of that talk rewritten as a blog post.
 
 > You can view the [slides][] for the talk [here][slides], take a look and play around with the examples on the slides! The talk was recorded so provided I don't find it unbearably cringeworthy I'll embed it here when it's uploaded.
 
@@ -105,7 +105,7 @@ MDN is a great learning resources for understanding CSS properties and rules. Th
 
 
 [sydcss]: https://www.meetup.com/SydCSS/
-[slides]: http://github.bkbooth.me/sydcss-talk-animations/
+[slides]: http://bkbooth.github.io/sydcss-talk-animations/
 [css-animation]: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 [css-keyframes]: https://developer.mozilla.org/en/docs/Web/CSS/@keyframes
 [css-transform]: https://developer.mozilla.org/en-US/docs/Web/CSS/transform

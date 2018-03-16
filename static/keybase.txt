@@ -4,6 +4,82 @@ https://keybase.io/bkbooth
 
 I hereby claim:
 
+  * I am an admin of https://benbooth.co
+  * I am bkbooth (https://keybase.io/bkbooth) on keybase.
+  * I have a public key with fingerprint 7B72 7CC5 C2F2 C945 6B38  E229 07E6 DF79 77A8 6371
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010195b86cd7b88b1cddf90ae45c4fcd75561e583788425520a00bff82daea062fb20a",
+      "fingerprint": "7b727cc5c2f2c9456b38e22907e6df7977a86371",
+      "host": "keybase.io",
+      "key_id": "07e6df7977a86371",
+      "kid": "010195b86cd7b88b1cddf90ae45c4fcd75561e583788425520a00bff82daea062fb20a",
+      "uid": "3e684184ebd4dfe6997d5031e60fc919",
+      "username": "bkbooth"
+    },
+    "service": {
+      "hostname": "benbooth.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1521165393,
+  "expire_in": 157680000,
+  "prev": "727f0f4f7f744e7e3f858e22234e798a3d198524ffe1203068b044ec8bd8f60c",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMM+AnicrZJrTBRXFMd3EQS3JeuraSpIyxS1QSDzujN3Niltqn1gKiICGthK5nEH
+hl12lt1lAZHUZIPFxird4CNCJRIUqZgGsbYoVqDUIo+iBaLWanlUmvBwS2lDW6Pt
+DK2f+rX3y80593f+95x/Tlf4IoPJGDrxQ0nRabHA2NtxuNCQeSZmaykmqFIJZinF
+bGjhQnYJuT3ZNkXCLBhO4AQHBMiIEitAKBCiJMkcziMaiLSsJQFgCAQgxUJIkwCQ
+OI/jgixDUuIRjzOkLGgpLA6TFUcOcjldisOjybICS7KiCERSJkWOBoxAQUSSHM4i
+RpJZjmV5yFAsoRXmqm69QmtO4N0oQVG1nBZk/9Pef/n/ue/CBTkKMZAmII0EiZZk
+xHAcKwGcIhCDyyJHcDroRi4Hn480WrAJqurJxcriMC3pVUSk+6oP8gRAjgUiQdSn
+cbpUjyqqdu0h1+Nxui16oafEqZNFSMj+VyNbUByS5qJW4UUut6I6MAuhkaJH0UUJ
+QBIEAyiOisNQsVNxoWxFJwDLQFw7+j/Iq3tPsjIu0zIrszSNWETJEOjmk5QWcZCn
+JIKDgKRlGREkTuEMFHANFKEgQZnBRUyfqsChYhYaaH3yOZqmW8lx8J5CF8LKOjus
+wQajybA4JEhfL4NpydInSxfsNP/1WteRN9jkL0eYJqICe2Vw9szunz+0T/RRzc8+
+6E5fu3lp9f0rJvO++YyL4KQvPpaLxsWmo0P1zM6bq0/0fhuS+lZj/j3j/Kt4W0He
+/RzQdelEVI3akvZ19HRd82TAlEunVRMXyv3PXI6ydjxY/VtPdORN47D5A+FxILSQ
++CzEufyXQ56yAWiomxsbHbH1D9YGymfmrNY1Kd90nq5c/HowniLVtTQ6rOmD9qq8
+RRO7DLW3x4i5l7ja7jarO8m3cev8rLF0RXGLLyZ2NLEm6xG1strvXzm7fpV3z/av
+3r5ScSBr+BPhbOVuMPRraibwThYlb5/2G0vt0ZE7Zv5sDOwX8x+uW+fA1kYYN7T2
+VEXd2miJm884ZFnf1uTfZk58lB76RU3+57N111esKQ9/uR20Kj+OJfYmxPgjlm1I
+fnPzwZGGO48/HtgUkTjTeMwf1n43JyvthV15hkDmaGVzm2+Kunq8bSpo0LbKdC00
+fuepn4Zd7od8+jtcd/gfQ9eOjsP3x9vHxi+3epdUmaYHvceuH7fvm+y6cXuP/FGL
+udt/tdd3+NOGd9F3/WWwf2pH57a46rMv7t0fn1WVkhE2dyPpDp9fLg3UTtwKGv7+
+ufb3ztXfazjQELHXfTHxaXNfbGVx5Mkt9b+bKzblHumZEqi+p0LESxeofl+YbVnD
++efP312e1HEOpo78DY0Hw2I=
+=iXb5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bkbooth
+
+==================================================================
+
+
+==================================================================
+https://keybase.io/bkbooth
+--------------------------------------------------------------------
+
+I hereby claim:
+
   * I am an admin of https://benkbooth.com
   * I am bkbooth (https://keybase.io/bkbooth) on keybase.
   * I have a public key with fingerprint 7B72 7CC5 C2F2 C945 6B38  E229 07E6 DF79 77A8 6371
@@ -64,87 +140,6 @@ CGn87cX472Me1E5O3hk5ek2Za3RkvnJSGr9vaBorGqlf6ymTWtLfqU642puk73be
 VjIOlt/cr6a/Nr6Ae6F/Ost5rIFq6ejqQ0avN+46k9fRU3N+maV1LX2hMsNRq5o7
 wjLKlu5xHmjP7zxU63247R87Lc1e
 =i1Jq
------END PGP MESSAGE-----
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/bkbooth
-
-==================================================================
-
-==================================================================
-https://keybase.io/bkbooth
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://bkbooth.me
-  * I am bkbooth (https://keybase.io/bkbooth) on keybase.
-  * I have a public key with fingerprint 7B72 7CC5 C2F2 C945 6B38  E229 07E6 DF79 77A8 6371
-
-To do so, I am signing this object:
-
-{
-    "body": {
-        "key": {
-            "eldest_kid": "010195b86cd7b88b1cddf90ae45c4fcd75561e583788425520a00bff82daea062fb20a",
-            "fingerprint": "7b727cc5c2f2c9456b38e22907e6df7977a86371",
-            "host": "keybase.io",
-            "key_id": "07e6df7977a86371",
-            "kid": "010195b86cd7b88b1cddf90ae45c4fcd75561e583788425520a00bff82daea062fb20a",
-            "uid": "3e684184ebd4dfe6997d5031e60fc919",
-            "username": "bkbooth"
-        },
-        "revoke": {
-            "sig_ids": [
-                "856212839a40262e2e01442d9cdebca6922d5cdc0c122c908ff697ad1da210ff0f"
-            ]
-        },
-        "service": {
-            "hostname": "bkbooth.me",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
-    },
-    "ctime": 1498002092,
-    "expire_in": 157680000,
-    "prev": "a8c645093d8e4cd5fe5f02562a25598229bfd00ee300ca5a566db9429ecdb446",
-    "seqno": 39,
-    "tag": "signature"
-}
-
-which yields the signature:
-
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.72
-Comment: https://keybase.io/crypto
-
-yMN8AnicrVJtUFRVGF4+FmnJwJmmnIKEm9EgxJx79n7ujM0wAzSWVCiBpM1yP86F
-G7B3Py5rpBDFpCH5jVCkxEeDlqmlpJAySFAM7iTgJolJxGAkI0ILZDgj2VmqH01/
-+3XmfeZ5n/d5n/d0Lw0ymAKWjI8Ubz4iOQI8nb4iQ/aak59uIURNLiYsW4h8tPig
-Ahm5dGu+KhMWApCA5GmRYySZFTlOJCVZVnggIIqWKAWDNM2QiObMLMdRkKYhEAAQ
-FYWDsoAEwEBFxBCRQCiqLRc57U7VpmNZVmQhK0m0BBUo8RTNiGYOQcgDFjGywvIs
-K3CMmSVxY57m8ndgc6LgQomqhjFcWP+y91/+/+y7aFHOjBiOIjkKiTIlK4jheVam
-gZlEDFAknuT9RBdy2oRChNlivqhpeh5RkkA4kVvLR/5YXWou9uwiLBsJjmYgCTkz
-L1AAMhBBBEiKgjIvyUiUBIaHUKYlWQISCXE8gFMUhmcFmZQFSAJFAQrxCtbGA92q
-tCjuD+nfwxNxkUDYnZquSVoBxvN03e6y+D3pxXY/cTMSrX9LWEXVJuMD4Q43crpU
-zUZYSMyUdNWvSVI8BwAEPEwg0Gt21Ymsqp9BswzGAfDPQW4sKXASQ9GAN8scoiSZ
-VhCtAIi3FXDEPIcPLCoyAAiZAZAEWqAZRhZ5CvJIkkWKYgj/Ug6bRljMPPYp5GJN
-nJtN0IuciCj5qnNTsCHAZAgxBvp/rsF0X8Q//zkyJsLw2SZTaPQH586kNV+9FxcX
-Xy6wIZXlFrJriFAbxkb37gx/et3XGb2tvqyuDkd/Y9OOadvpB/7QUwqfPKDkt4nu
-GRq0jkf1PuuoqUArz04SHteb07sq9t2ddZQxbzhiR4a9g5fLEqE+bBr63Hj8e8cq
-+7tzTWF73n+kfBm5YTDt0N6E5n196evPvbf6XjbqWXd/dH5PqCdjSrTuv1k3PVR0
-7WS0w5qS46256C01DoQc6HmmJri24PbCQf5oww8xl4nH53YENbQ31entJfG7qBXB
-4Q/NH795q2dacE9oE+dvAa6uas0N18ZKMq7jichlT512N593pTwf2hIWs7w94NS1
-mYK5kaW+2Lkjg4lrx64EPZp0ceDb1Ds92e2WmUur4Rdj+zstNu/r/WO9Yb6BqLiP
-ktyd6NRMRv/c1t31QUu6fzNllf1aMphU+11xRdtsanH1ZP0vN5bDzLThnMxM37Gd
-jfW17NSqyWCjpzIrvunnhqqO5AYtoq/l5cn5Y6UfXpi/U3FIf27miuXoj+nbF1Kp
-0esDh0v7wu9eLVQvtCau6H3Qu9Dc4v2Y1+SFE7VcWePDU7edo+ruZPdQe/lLXfYT
-gdvbIrcZs6ovvbpe8LzwSey0oXfknYr0g28HFm2bjPq9+7GtX6YwGypX7vHlHR6/
-frbKeKa74RtPaurkRPVoTlfVT7VvJb846/kTdDXuSQ==
-=BKbQ
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or

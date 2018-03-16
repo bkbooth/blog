@@ -6,7 +6,7 @@ aliases = ["/building-a-basic-ui-clone-of-instagram-using-elm-part-2"]
 hjsExtraLanguages = ["elm"]
 +++
 
-This article is a part of a series, if you haven't read the first part yet you can read it [here](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part1) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
+This article is a part of a series, if you haven't read the first part yet you can read it [here](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-1/). Alternatively you can get the code from the end of the last article [here](https://github.com/bkbooth/Elmstagram/tree/part1) and continue along. You can view the finished app [here][demo] and all of the source code is available [here][repo].
 
 
 ## Implement the main list of posts view
@@ -24,7 +24,7 @@ Getting a list of posts is all well and good, but not particularly exciting if w
   </head>
   <body>
     <div id="app"></div>
-    
+
     <script src="js/app.js"></script>
     <script>
       Elm.App.embed(document.getElementById("app"));
@@ -125,7 +125,7 @@ viewKeyedPost model post =
     )
 ```
 
-As you can see, a keyed node is a `(String, Html Msg)` tuple instead of just a `Html Msg` node, the string is the unique identifier for that node, in this case the `post.id`. Change `div.photo-list` to a keyed node which uses `viewKeyedPost` like this `View.rootView` 
+As you can see, a keyed node is a `(String, Html Msg)` tuple instead of just a `Html Msg` node, the string is the unique identifier for that node, in this case the `post.id`. Change `div.photo-list` to a keyed node which uses `viewKeyedPost` like this `View.rootView`
 
 ```elm
 -- View.elm
@@ -165,7 +165,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case action of
         -- ...
-        
+
         IncrementLikes postId ->
             let
                 incrementPostLikes : String -> Post -> Post
@@ -215,7 +215,7 @@ main =
 ```
 
 Next we need to update _Types.elm_, we'll need `Model` to keep track of the current page. Firstly define a new union type `Page` with the pages that you need, in this case `ListOfPosts` for the main list of posts, and `SinglePost String` for the single post view where the `String` will be a `Post.id`. We then need to add a new `page` property to the `Model` record. We'll also need to update `Types.initialModel` to set the initial `Page`, but we'll take the initial `Page` as a parameter because we'll parse the initial URL to work out what the initial `Page` should be in `State.init`. We also need to add a new action to the `Msg` union type to handle navigation changes, we'll call it `NavigatedTo` and it will take a single `Maybe Page` parameter.
- 
+
 ```elm
 -- Types.elm
 
@@ -223,7 +223,7 @@ type alias Model =
     { posts : List Post
     , page : Page
     }
-    
+
 initialModel : Page -> Model
 initialModel page =
     Model [] page
@@ -244,25 +244,25 @@ Next up is _State.elm_ and we've got a few changes that we need to make. We need
 
 import Navigation
 import UrlParser exposing (..)
-            
+
 hashParser : Navigation.Location -> Msg
 hashParser location =
     NavigatedTo <|
         UrlParser.parseHash pageParser location
-        
+
 pageParser : Parser (Page -> a) a
 pageParser =
     oneOf
         [ map ListOfPosts <| s ""
         , map SinglePost <| s "view" </> string
         ]
-        
+
 toUrl : Page -> String
 toUrl page =
     case page of
         ListOfPosts ->
             "/"
-            
+
         SinglePost postId ->
             "/view/" ++ postId
 ```
@@ -279,7 +279,7 @@ init location =
             initialModel page
                 ! [ Rest.getPosts
                   ]
-            
+
         Nothing ->
             initialModel ListOfPosts
                 ! [ Rest.getPosts
@@ -295,13 +295,13 @@ Because we're using `Navigation.program`, our `State.init` function now gets pas
 update msg model =
     case msg of
         -- ...
-        
+
         NavigatedTo maybePage ->
             case maybePage of
                 Just page ->
                     { model | page = page }
                         ! []
-                        
+
                 Nothing ->
                     model
                         ! [ Navigation.newUrl <| toUrl ListOfPosts
@@ -332,26 +332,26 @@ viewPage model =
             Html.Keyed.node "div"
                 [ class "photo-list" ]
                 <| List.map (viewKeyedPost model) model.posts
-                
+
         SinglePost postId ->
             div [ class "photo-single" ]
                 [ text ("Post: " ++ postId) ]
 ```
 
-Finally we need to update the links in _View.elm_ to use `State.toUrl`. Import `State` and then replace both of the `href "./"`'s in `View.rootView` with `href (State.toUrl ListOfPosts)`, then replace the `href "#"` in `View.viewPost` with `href (State.toUrl SinglePost post.id)`. You should be able to recompile _js/app.js_ now, start your static HTTP server and view the app in the browser. 
+Finally we need to update the links in _View.elm_ to use `State.toUrl`. Import `State` and then replace both of the `href "./"`'s in `View.rootView` with `href (State.toUrl ListOfPosts)`, then replace the `href "#"` in `View.viewPost` with `href (State.toUrl SinglePost post.id)`. You should be able to recompile _js/app.js_ now, start your static HTTP server and view the app in the browser.
 
 
 ## That's all (for now)
 
 You can view the code that we've built so far [here](https://github.com/bkbooth/Elmstagram/tree/part2). We'll continue building the app in Part 3:
 
-  * [Part 1](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
-  * [Part 3](https://benkbooth.com/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
+  * [Part 1](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-1/) - Setup an [Elm][] app and load posts from a [JSON][] file
+  * [Part 3](https://benbooth.co/building-a-basic-ui-clone-of-instagram-using-elm-part-3/) - Build the single post view and add a comments form
 
 
   [elm]: http://elm-lang.org/ "Elm"
   [instagram]: https://www.instagram.com/ "Instagram"
-  [demo]: https://elmstagram.bkbooth.me "Elmstagram | Demo"
+  [demo]: https://elmstagram.benbooth.co "Elmstagram | Demo"
   [repo]: https://github.com/bkbooth/Elmstagram "Elmstagram | GitHub"
   [javascript]: https://en.wikipedia.org/wiki/JavaScript "JavaScript"
   [json]: https://en.wikipedia.org/wiki/JSON "JSON"

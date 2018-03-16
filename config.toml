@@ -1,4 +1,4 @@
-baseURL = "https://benkbooth.com/"
+baseURL = "https://benbooth.co/"
 languageCode = "en-AU"
 title = "Ben Booth"
 theme = "casper"
@@ -14,7 +14,7 @@ canonifyUrls = true
   author = "Ben Booth"
   bio= "Software developer specialising in JavaScript, husband & father, football (soccer) addict and Christian."
   authorLocation = "Wollongong, Australia"
-  authorWebsite = "https://benkbooth.com"
+  authorWebsite = "https://benbooth.co"
   authorThumbnail = "images/BenBooth_20170609.jpg"
   googleAnalyticsUserID = "UA-46740857-2"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml

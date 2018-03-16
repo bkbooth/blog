@@ -5,7 +5,7 @@ tags = ["programming", "javascript"]
 aliases = ["/simple-javascript-template-engine"]
 +++
 
-Around 6 months ago while learning JavaScript properly and looking for work as a JavaScript developer I started working on a pure HTML/CSS/JS version of Tetris ([BlockDrop](https://blockdrop.bkbooth.me) - [github](https://github.com/bkbooth/BlockDrop)) to experiment and play with my new skills. It's been a while since I've touched it but I just started looking at it again recently and there's quite a lot that I'd do differently now so I started rewriting it from the ground up. I haven't got that far with the actual rewrite but one of the things I really wanted to do differently and therefore implemented it first was a simple templating engine so that I could get all the HTML out of my JavaScript.
+Around 6 months ago while learning JavaScript properly and looking for work as a JavaScript developer I started working on a pure HTML/CSS/JS version of Tetris ([BlockDrop](https://blockdrop.benbooth.co) - [github](https://github.com/bkbooth/BlockDrop)) to experiment and play with my new skills. It's been a while since I've touched it but I just started looking at it again recently and there's quite a lot that I'd do differently now so I started rewriting it from the ground up. I haven't got that far with the actual rewrite but one of the things I really wanted to do differently and therefore implemented it first was a simple templating engine so that I could get all the HTML out of my JavaScript.
 
 
 ## Setting up a module
@@ -34,7 +34,7 @@ The first thing the template engine needs to be able to do is load the HTML temp
 ```javascript
 var TemplateEngine = (function() {
   var xhr = new XMLHttpRequest();
-  
+
   return {
     load: function(fileName) {
       var contents = "";
@@ -45,7 +45,7 @@ var TemplateEngine = (function() {
       };
       xhr.open("GET", fileName, false);
       xhr.send();
-      
+
       return contents;
     }
   }
@@ -65,14 +65,14 @@ var TemplateEngine = (function() {
   cache = JSON.parse(
     localStorage.getItem("yourapp.cache.template")
   ) || {};
-  
+
   return {
     load: function(fileName) {
       var contents = cache[Utils.hashCode(fileName)];
       if (!contents) {
         contents = "";
         // XHR unchanged from previous step
-        
+
         cache[Utils.hashCode(fileName)] = contents;
         localStorage.setItem(
           "yourapp.cache.template",

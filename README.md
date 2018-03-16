@@ -1,3 +1,3 @@
 # blog
 
-Source for my blog, built with [Hugo](https://gohugo.io/), currently hosted at [benkbooth.com](https://benkbooth.com)
+Source for my blog, built with [Hugo](https://gohugo.io/), currently hosted at [benbooth.co](https://benbooth.co)

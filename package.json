@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Source for my blog, built with Hugo, currently hosted at benkbooth.com",
+  "description": "Source for my blog, built with Hugo, currently hosted at benbooth.co",
   "author": "Ben Booth <bkbooth@gmail.com>",
   "repository": "git@github.com:bkbooth/blog.git",
   "keywords": ["bkbooth", "blog", "Hugo"],
