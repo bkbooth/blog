@@ -1,4 +1,5 @@
 # Redirect Netlify domain aliases to primary domain
+http://benbooth.co/* https://benbooth.co/:splat 301!
 https://benkbooth.com/* https://benbooth.co/:splat 301!
 http://benkbooth.com/* https://benbooth.co/:splat 301!
 https://www.benkbooth.com/* https://benbooth.co/:splat 301!
